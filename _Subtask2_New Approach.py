@@ -15,7 +15,7 @@ import ast
 import nest_asyncio
 nest_asyncio.apply()
 
-API_KEY = "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"
+API_KEY = "Api key"
 API_URL = "https://openrouter.ai/api/v1/chat/completions"
 MODEL = "mistralai/mixtral-8x7b-instruct"
 
@@ -178,7 +178,7 @@ if results:
     span_df = pd.DataFrame(results)
     span_df = span_df[["document", "comment_id", "label", "wordspan", "start", "end"]]
     span_df.to_csv(
-        r"C:\Users\kaoda\Desktop\PHD\Candy speech detection\osfstorage-archive\Data\test data\task2_spans.csv",
+        r"task2_spans.csv",
         index=False
     )
     print("Spans saved to task2_spans.csv")
